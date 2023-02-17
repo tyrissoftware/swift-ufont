@@ -6,15 +6,15 @@ extension UFont {
 		switch family {
 		case let .system(design, weight):
 			let font = NSFont.systemFont(ofSize: size, weight: weight.appKit)
-			if let descriptor = font.fontDescriptor.withDesign(design.appKit) {
-				return NSFont(descriptor: descriptor, size: size)!
-			} else {
-				 return font
-			}
-			
+			let descriptor = font.fontDescriptor.withDesign(design.appKit)
+
+			return descriptor
+					.flatMap { descriptor in
+						NSFont(descriptor: descriptor, size: size)
+					} ?? font
+
 		case let .custom(name):
-			let descriptor = NSFontDescriptor(name: name, size: size)
-			return NSFont(descriptor: descriptor, size: size)!
+			return NSFont(name: name, size: size) ?? NSFont.systemFont(ofSize: size)
 		}
 	}
 }
