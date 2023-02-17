@@ -23,14 +23,14 @@ class UFontSwiftUITests: XCTestCase {
 		XCTAssertEqual(Font.Weight.black, UFontWeight.black.swiftUI)
 	}
 	
-	func testUFontSwiftSystem(){
+	func testUFontSwiftUISystem(){
 		
 		let letra = UFont.system(size: 32, weight: .ultraLight, design: .serif).swiftUI
 		
 		XCTAssertEqual(letra,UFont.system(size: 32, weight: .ultraLight, design: .serif).swiftUI)
 		}
 	
-	func testUFontSwiftCustom(){
+	func testUFontSwiftUICustom(){
 		
 		let letra = UFont.custom("Raleway-ExtraBold", size: 32).swiftUI
 		
