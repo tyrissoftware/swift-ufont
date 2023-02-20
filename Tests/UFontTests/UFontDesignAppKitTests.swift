@@ -4,23 +4,23 @@ import AppKit
 @testable import UFont
 
 final class UFontDesignAppKitTests: XCTestCase {
-
+	
 	func testAppKitCaseDesigns() {
-		let letraSerif = UFont.system(size: 32, weight: .ultraLight, design: .serif).appKit
+		let fontSerif = UFont.system(size: 32, weight: .ultraLight, design: .serif).appKit
 		
-			XCTAssertEqual(letraSerif, UFont.system(size: 32, weight: .ultraLight, design: .serif).appKit)
-		let letraRounded = UFont.system(size: 32, weight: .ultraLight, design: .rounded).appKit
+		XCTAssertEqual(fontSerif, UFont.system(size: 32, weight: .ultraLight, design: .serif).appKit)
+		let fontRounded = UFont.system(size: 32, weight: .ultraLight, design: .rounded).appKit
 		
-		XCTAssertEqual(letraRounded, UFont.system(size: 32, weight: .ultraLight, design: .rounded).appKit)
+		XCTAssertEqual(fontRounded, UFont.system(size: 32, weight: .ultraLight, design: .rounded).appKit)
 		
-		let letraMonospaced = UFont.system(size: 32, weight: .ultraLight, design: .monospaced).appKit
+		let fontMonospaced = UFont.system(size: 32, weight: .ultraLight, design: .monospaced).appKit
 		
-		XCTAssertEqual(letraMonospaced, UFont.system(size: 32, weight: .ultraLight, design: .monospaced).appKit)
+		XCTAssertEqual(fontMonospaced, UFont.system(size: 32, weight: .ultraLight, design: .monospaced).appKit)
 		
-		let letraDefault = UFont.system(size: 32, weight: .ultraLight, design: .default).appKit
+		let fontDefault = UFont.system(size: 32, weight: .ultraLight, design: .default).appKit
 		
-		XCTAssertEqual(letraDefault, UFont.system(size: 32, weight: .ultraLight, design: .default).appKit)
+		XCTAssertEqual(fontDefault, UFont.system(size: 32, weight: .ultraLight, design: .default).appKit)
 	}
-
+	
 }
 #endif
