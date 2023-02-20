@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "UFont",
+    name: "swift-ufont",
 	 platforms: [
 		 .iOS(.v13),
 		 .macOS(.v10_15)
