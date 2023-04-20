@@ -1,4 +1,7 @@
+#if canImport(AppKit)
 import XCTest
+import AppKit
+
 @testable import UFont
 
 final class UFontWeightAppKitTests: XCTestCase {
@@ -43,3 +46,4 @@ final class UFontWeightAppKitTests: XCTestCase {
 	}
 	
 }
+#endif
