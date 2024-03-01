@@ -14,6 +14,8 @@ struct ThemeFont {
 
 And now you can initialize it with the font hierarchy defined by your style guide.
 
+## SwiftUI
+
 If you are using SwiftUI, you can conform to EnvironmentKey so you can easily access your fonts in any view:
 
 ```swift
@@ -39,4 +41,20 @@ struct MyView: View {
 		Text("Hello, World!").font(font)
 	}
 }
+```
+
+## UIKit
+
+You can pass your Theme manually, define a Singleton or you can use the [UIAppearance](https://developer.apple.com/documentation/uikit/uiappearance) and apply your styles globally.
+
+```swift
+UILabel.appearance().font = fonts.title1.uiKit
+```
+
+## AppIKit
+
+Same as before:
+
+```swift
+NSLabel.appearance().font = fonts.title1.appKit
 ```
