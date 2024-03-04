@@ -15,6 +15,12 @@ font.uiKit
 font.appKit
 ```
 
+In the case of SwiftUI, UFont provides a View extension so you can use it directly:
+
+```swift
+Text("Hello, world"!).font(UFont.system(14))
+```
+
 ## Initializers
 
 You can construct a UFont by passing a font family and size. The font family can be a standard system font or a custom one.

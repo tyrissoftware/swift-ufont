@@ -1,6 +1,7 @@
 import Foundation
 import XCTest
 import SwiftUI
+
 @testable import UFont
 
 class UFontSwiftUITests: XCTestCase {
@@ -23,19 +24,15 @@ class UFontSwiftUITests: XCTestCase {
 		XCTAssertEqual(Font.Weight.black, UFontWeight.black.swiftUI)
 	}
 	
-	func testUFontSwiftUISystem(){
-		
+	func testUFontSwiftUISystem() {
 		let font = UFont.system(size: 32, weight: .ultraLight, design: .serif).swiftUI
-		
+				
 		XCTAssertEqual(font,UFont.system(size: 32, weight: .ultraLight, design: .serif).swiftUI)
 	}
 	
-	func testUFontSwiftUICustom(){
-		
+	func testUFontSwiftUICustom() {
 		let font = UFont.custom("Raleway-ExtraBold", size: 32).swiftUI
 		
 		XCTAssertEqual(font,UFont.custom("Raleway-ExtraBold", size: 32).swiftUI)
-		
 	}
-	
 }

@@ -1,8 +1,17 @@
-# UFont
+# UFont 🖋️
 
 ## Motivation
 
 UFont stands for Universal Font. This library was built with the purpose of defining a model that could allow for easy font management. A Ufont can be serialized, compared, and modified in a platform independent way. At usage time, we can transform it to a SwiftUI.Font, a UIFont or a NSFont. 
+
+
+## Installation
+
+Use it with swift package manager:
+
+```swift
+.package(url: "https://github.org/tyrissoftware/swift-ufont.git", from: "0.1.1")
+```
 
 ## Documentation
 

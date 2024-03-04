@@ -30,17 +30,3 @@ extension UFont {
 	}
 }
 
-import SwiftUI
-
-extension UFont {
-	public var swiftUI: Font {
-		switch family {
-		case let .system(design, weight):
-			return Font.system(size: size, weight: weight.swiftUI, design: design.swiftUI)
-			
-		case let .custom(name):
-			return Font.custom(name, size: size)
-		}
-	}
-}
-

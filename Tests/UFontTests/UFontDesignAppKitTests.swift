@@ -1,10 +1,10 @@
 #if canImport(AppKit)
 import XCTest
 import AppKit
+
 @testable import UFont
 
 final class UFontDesignAppKitTests: XCTestCase {
-	
 	func testAppKitCaseDesigns() {
 		let fontSerif = UFont.system(size: 32, weight: .ultraLight, design: .serif).appKit
 		
@@ -21,6 +21,5 @@ final class UFontDesignAppKitTests: XCTestCase {
 		
 		XCTAssertEqual(fontDefault, UFont.system(size: 32, weight: .ultraLight, design: .default).appKit)
 	}
-	
 }
 #endif

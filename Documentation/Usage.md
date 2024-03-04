@@ -51,7 +51,7 @@ You can pass your Theme manually, define a Singleton or you can use the [UIAppea
 UILabel.appearance().font = fonts.title1.uiKit
 ```
 
-## AppIKit
+## AppKit
 
 Same as before:
 
