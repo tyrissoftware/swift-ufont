@@ -1,6 +1,6 @@
 import Foundation
 
-public enum UFontDesign: String, Equatable, Hashable {
+public enum UFontDesign: String, Equatable, Hashable, Codable {
 	case `default`
 	case serif
 	case rounded

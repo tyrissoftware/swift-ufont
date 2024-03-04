@@ -1,6 +1,6 @@
 import Foundation
 
-public struct UFont: Equatable, Hashable {
+public struct UFont: Equatable, Hashable, Codable {
 	public var family: UFontFamily
 	public var size: CGFloat
 	
@@ -27,20 +27,6 @@ extension UFont {
 		design: UFontDesign
 	) -> Self {
 		.init(family: .system(design, weight), size: size)
-	}
-}
-
-import SwiftUI
-
-extension UFont {
-	public var swiftUI: Font {
-		switch family {
-		case let .system(design, weight):
-			return Font.system(size: size, weight: weight.swiftUI, design: design.swiftUI)
-			
-		case let .custom(name):
-			return Font.custom(name, size: size)
-		}
 	}
 }
 
