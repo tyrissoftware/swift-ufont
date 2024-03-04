@@ -2,8 +2,7 @@ import XCTest
 @testable import UFont
 
 final class UFontTests: XCTestCase {
-	
-	func testUFontBasicInit(){
+	func testUFontBasicInit() {
 		let font = UFont.custom("Raleway-ExtraBold", size: 32)
 		XCTAssertEqual(font,UFont.custom("Raleway-ExtraBold", size: 32))
 	}
