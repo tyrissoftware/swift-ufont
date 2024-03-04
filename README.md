@@ -10,7 +10,7 @@ UFont stands for Universal Font. This library was built with the purpose of defi
 Use it with swift package manager:
 
 ```swift
-.package(url: "https://github.org/tyrissoftware/swift-ufont.git", from: "0.1.1")
+.package(url: "https://github.org/tyrissoftware/swift-ufont.git", from: "0.1.2")
 ```
 
 ## Documentation
