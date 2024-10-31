@@ -1,6 +1,6 @@
 import Foundation
 
-public struct UFont: Equatable, Hashable, Codable {
+public struct UFont: Equatable, Hashable, Codable, Sendable {
 	public var family: UFontFamily
 	public var size: CGFloat
 	
