@@ -1,6 +1,6 @@
 import Foundation
 
-public enum UFontWeight: String, Equatable, Hashable, Codable {
+public enum UFontWeight: String, Equatable, Hashable, Codable, Sendable {
 	case ultraLight
 	case thin
 	case light
